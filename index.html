@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark">
     <meta name="theme-color" content="#111518">
-    <meta name="description" content="Pavel Rozhkov — software engineer focused on C++, CUDA, high-performance computing, and systems programming.">
-    <title>Pavel Rozhkov | C++ &amp; CUDA Engineer</title>
+    <meta name="description" content="Pavel Rozhkov, C++ software engineer specializing in HPC, CUDA, GPU computing, and numerical simulation. Experience, engineering results, and CV.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pavel Rozhkov | C++ Software Engineer · HPC &amp; GPU Computing">
+    <meta property="og:description" content="Pavel Rozhkov, C++ software engineer specializing in HPC, CUDA, GPU computing, and numerical simulation. Experience, engineering results, and CV.">
+    <meta property="og:locale" content="en_US">
+    <title>Pavel Rozhkov | C++ Software Engineer · HPC &amp; GPU Computing</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -22,8 +26,8 @@
             <nav aria-label="Main navigation" data-i18n-aria-label="nav.label">
                 <ul>
                     <li><a href="#about" data-i18n="nav.about">About</a></li>
-                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-                    <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#stack" data-i18n="nav.stack">Technologies</a></li>
                     <li><a href="#cv" data-i18n="nav.cv">CV</a></li>
                     <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                 </ul>
@@ -39,33 +43,37 @@
         <section id="about" class="about-section" aria-labelledby="intro-title">
             <div class="hero">
                 <div class="hero-copy">
-                    <p class="eyebrow"><span class="accent-square" aria-hidden="true"></span><span data-i18n="hero.eyebrow">Software engineer</span></p>
+                    <p class="eyebrow"><span class="accent-square" aria-hidden="true"></span><span data-i18n="hero.eyebrow">C++ Software Engineer</span></p>
                     <h1 id="intro-title" data-i18n="name">Pavel Rozhkov</h1>
-                    <p class="hero-role" data-i18n="hero.role">C++, CUDA &amp; high-performance computing.</p>
-                    <p class="hero-description" data-i18n="hero.description">Systems programming, parallel computing, and performance optimization. Based in Moscow, Russia.</p>
+                    <p class="hero-role" data-i18n="hero.role">HPC, CUDA &amp; GPU computing.</p>
+                    <p class="hero-description" data-i18n="hero.description">I develop and optimize numerical simulation software, with a focus on resource use, numerical stability, and reproducible parallel results.</p>
                     <div class="actions">
-                        <a class="button button-primary" href="#projects"><span data-i18n="hero.projects">Explore projects</span><span aria-hidden="true">&rarr;</span></a>
-                        <a class="button button-secondary" href="#cv"><span data-i18n="hero.cv">View CV</span><span aria-hidden="true">&darr;</span></a>
+                        <a class="button button-primary" href="#experience"><span data-i18n="hero.experience">View experience</span><span aria-hidden="true">&rarr;</span></a>
+                        <a class="button button-secondary" href="assets/cv/Pavel_Rozhkov_CV_EN.pdf" download hreflang="en" data-cv-download><span data-i18n="cv.download">Download CV (EN · PDF)</span><span aria-hidden="true">&darr;</span></a>
                     </div>
                 </div>
 
-                <aside class="focus-panel" aria-labelledby="focus-title">
+                <aside class="results-panel" aria-labelledby="results-title">
                     <div class="panel-heading">
-                        <span class="panel-brackets" aria-hidden="true">[&nbsp;]</span>
-                        <h2 id="focus-title" data-i18n="focus.title">Engineering focus</h2>
+                        <h2 id="results-title" data-i18n="results.title">Selected results</h2>
+                        <p data-i18n="results.context">Rock Flow Dynamics · numerical simulation</p>
                     </div>
-                    <dl class="focus-list">
-                        <div class="focus-item">
-                            <dt><span class="line-number" aria-hidden="true">01</span><span data-i18n="focus.language">Core language</span></dt>
-                            <dd>C++</dd>
+                    <dl class="results-grid">
+                        <div class="result-item">
+                            <dt data-i18n="results.reporting">Faster reporting parameter calculations with a redesigned algorithm</dt>
+                            <dd>&gt;100<span>×</span></dd>
                         </div>
-                        <div class="focus-item">
-                            <dt><span class="line-number" aria-hidden="true">02</span><span data-i18n="focus.compute">GPU computing</span></dt>
-                            <dd>CUDA</dd>
+                        <div class="result-item">
+                            <dt data-i18n="results.memory">Less GPU memory through more efficient data storage</dt>
+                            <dd>20–25<span>%</span></dd>
                         </div>
-                        <div class="focus-item">
-                            <dt><span class="line-number" aria-hidden="true">03</span><span data-i18n="focus.domain">Domain</span></dt>
-                            <dd data-i18n="focus.domainValue">HPC &amp; systems</dd>
+                        <div class="result-item">
+                            <dt data-i18n="results.matrix">Faster GPU matrix assembly component</dt>
+                            <dd>6<span>×</span></dd>
+                        </div>
+                        <div class="result-item">
+                            <dt data-i18n="results.batch">Lower total runtime for large batches of simulations</dt>
+                            <dd>10<span>%</span></dd>
                         </div>
                     </dl>
                 </aside>
@@ -74,63 +82,78 @@
             <section class="expertise" aria-labelledby="expertise-title">
                 <div class="section-heading">
                     <span class="section-index" aria-hidden="true">01 /</span>
-                    <h2 id="expertise-title" data-i18n="expertise.title">What I Do</h2>
+                    <h2 id="expertise-title" data-i18n="expertise.title">Expertise</h2>
                 </div>
                 <div class="expertise-grid">
                     <article class="specialty">
                         <span class="specialty-tag">C++</span>
-                        <h3 data-i18n="expertise.systems.title">C++ &amp; Systems</h3>
-                        <p data-i18n="expertise.systems.description">Systems programming with attention to memory, concurrency, and clear interfaces.</p>
+                        <h3 data-i18n="expertise.systems.title">C++ &amp; Systems Engineering</h3>
+                        <p data-i18n="expertise.systems.description">Design and evolve large C++ codebases, refactor complex subsystems, and review changes for correctness and maintainability.</p>
                     </article>
                     <article class="specialty">
                         <span class="specialty-tag">CUDA</span>
                         <h3 data-i18n="expertise.gpu.title">GPU Computing</h3>
-                        <p data-i18n="expertise.gpu.description">Parallel computing and GPU acceleration for compute-intensive workloads.</p>
+                        <p data-i18n="expertise.gpu.description">Develop CUDA computations, tune data layouts and GPU memory use, and optimize CPU–GPU transfers and matrix assembly.</p>
                     </article>
                     <article class="specialty">
                         <span class="specialty-tag">HPC</span>
-                        <h3 data-i18n="expertise.performance.title">Performance Optimization</h3>
-                        <p data-i18n="expertise.performance.description">Profiling, bottleneck analysis, and efficient use of compute resources.</p>
+                        <h3 data-i18n="expertise.performance.title">HPC &amp; Performance Optimization</h3>
+                        <p data-i18n="expertise.performance.description">Profile numerical algorithms and build multithreaded and distributed computations that balance throughput, stability, and reproducibility.</p>
                     </article>
                 </div>
             </section>
         </section>
 
-        <section id="projects" class="page-section" aria-labelledby="projects-title">
+        <section id="experience" class="page-section" aria-labelledby="experience-title">
             <div class="section-heading">
                 <span class="section-index" aria-hidden="true">02 /</span>
-                <h2 id="projects-title" data-i18n="projects.title">Projects</h2>
+                <h2 id="experience-title" data-i18n="experience.title">Experience</h2>
             </div>
-            <div class="project-placeholder">
-                <span class="project-symbol" aria-hidden="true">{ }</span>
-                <div>
-                    <h3 data-i18n="projects.pending">Project details coming soon</h3>
-                    <p data-i18n="projects.description">Project descriptions, source links, and technical notes will be added here.</p>
+            <article class="experience-card" aria-labelledby="employer-title">
+                <header class="experience-header">
+                    <h3 id="employer-title">Rock Flow Dynamics</h3>
+                    <p class="experience-role" data-i18n="experience.role">Senior C++/CUDA Developer</p>
+                    <p class="experience-period"><time datetime="2023-06" data-i18n="experience.start">June 2023</time> — <span data-i18n="experience.present">Present</span></p>
+                    <p class="experience-location" data-i18n="experience.location">Moscow, Russia</p>
+                </header>
+                <div class="experience-details">
+                    <p data-i18n="experience.summary">Develop and optimize a C++20/CUDA numerical simulation engine for CPUs, GPUs, and distributed systems. Work spans computational algorithms, memory management, and subsystem integration.</p>
+                    <p data-i18n="experience.codebase">Extend and refactor a large C++ codebase, conduct code reviews, and analyze numerical correctness and performance.</p>
+                    <h4 data-i18n="experience.results">Selected engineering work</h4>
+                    <ul class="experience-results">
+                        <li data-i18n="experience.summation">Developed a numerically stable summation algorithm for multithreaded computations, reducing overhead from approximately 10% to less than 1%.</li>
+                        <li data-i18n="experience.mpi">Implemented stable summation for MPI and improved parallel result reproducibility across several simulator subsystems.</li>
+                        <li data-i18n="experience.transfers">Accelerated CPU–GPU data transfers before Newton iterations by a factor of 5.</li>
+                    </ul>
                 </div>
-                <a class="text-link" href="https://github.com/lor1anz?tab=repositories"><span data-i18n="projects.github">Browse GitHub</span><span aria-hidden="true">&nearr;</span></a>
-            </div>
+            </article>
         </section>
 
         <section id="stack" class="page-section" aria-labelledby="stack-title">
             <div class="section-heading">
                 <span class="section-index" aria-hidden="true">03 /</span>
-                <h2 id="stack-title" data-i18n="stack.title">Tech Stack</h2>
+                <h2 id="stack-title" data-i18n="stack.title">Technologies</h2>
             </div>
             <dl class="stack-list">
                 <div class="stack-row">
-                    <dt data-i18n="stack.language">Core language</dt>
-                    <dd><span class="tech-tag">C++</span></dd>
-                    <dd class="stack-description" data-i18n="stack.systems">Systems programming</dd>
+                    <dt data-i18n="stack.languages">Languages</dt>
+                    <dd class="tech-tags"><span class="tech-tag">C++23</span><span class="tech-tag">C</span><span class="tech-tag">Python</span><span class="tech-tag">Go</span><span class="tech-tag">SQL</span></dd>
                 </div>
                 <div class="stack-row">
-                    <dt data-i18n="stack.compute">GPU computing</dt>
-                    <dd><span class="tech-tag">CUDA</span></dd>
-                    <dd class="stack-description" data-i18n="stack.parallel">Parallel computing</dd>
+                    <dt data-i18n="stack.parallel">GPU &amp; parallel computing</dt>
+                    <dd class="tech-tags"><span class="tech-tag">CUDA C++</span><span class="tech-tag">MPI</span><span class="tech-tag">OpenMP</span></dd>
                 </div>
                 <div class="stack-row">
-                    <dt data-i18n="stack.focus">Engineering focus</dt>
-                    <dd><span class="tech-tag">HPC</span></dd>
-                    <dd class="stack-description" data-i18n="stack.performance">High-performance computing &amp; optimization</dd>
+                    <dt data-i18n="stack.profiling">Profiling &amp; debugging</dt>
+                    <dd class="tech-tags"><span class="tech-tag">Nsight Compute</span><span class="tech-tag">Nsight Systems</span><span class="tech-tag">perf</span><span class="tech-tag">GDB</span><span class="tech-tag">CUDA-GDB</span><span class="tech-tag">Valgrind</span></dd>
+                </div>
+                <div class="stack-row">
+                    <dt data-i18n="stack.libraries">Libraries &amp; testing</dt>
+                    <dd class="tech-tags"><span class="tech-tag">STL</span><span class="tech-tag">Boost</span><span class="tech-tag">GoogleTest</span><span class="tech-tag">Qt</span><span class="tech-tag">OpenCV</span><span class="tech-tag">zlib</span></dd>
+                </div>
+                <div class="stack-row">
+                    <dt data-i18n="stack.tools">Build &amp; platforms</dt>
+                    <dd class="tech-tags"><span class="tech-tag">Linux</span><span class="tech-tag">Git</span><span class="tech-tag">GN/Ninja</span><span class="tech-tag">CMake</span><span class="tech-tag">GCC</span><span class="tech-tag">Clang</span><span class="tech-tag">Jenkins</span></dd>
                 </div>
             </dl>
         </section>
@@ -138,24 +161,30 @@
         <section id="cv" class="page-section" aria-labelledby="cv-title">
             <div class="section-heading">
                 <span class="section-index" aria-hidden="true">04 /</span>
-                <h2 id="cv-title" data-i18n="cv.title">CV</h2>
+                <h2 id="cv-title" data-i18n="cv.title">Education &amp; CV</h2>
             </div>
             <div class="cv-grid">
-                <div class="cv-entry">
-                    <h3 data-i18n="cv.experience">Experience</h3>
-                    <p data-i18n="cv.experiencePending">Professional experience details will be added here.</p>
+                <div class="cv-entry education-entry">
+                    <h3 data-i18n="education.university">Lomonosov Moscow State University</h3>
+                    <p data-i18n="education.faculty">Faculty of Mechanics and Mathematics</p>
+                    <p data-i18n="education.degree">Specialist Degree in Mathematics</p>
+                    <p class="education-period"><span data-i18n="education.period">2020–2027 · expected graduation in 2027</span></p>
+                    <p data-i18n="education.language">English proficiency: B2</p>
                 </div>
-                <div class="cv-entry">
-                    <h3 data-i18n="cv.education">Education</h3>
-                    <p data-i18n="cv.educationPending">Education details will be added here.</p>
+                <div class="cv-entry cv-download-entry">
+                    <h3 data-i18n="cv.full">Full CV</h3>
+                    <p data-i18n="cv.description">Complete experience, achievements, and technical skills in a one-page PDF.</p>
+                    <div class="cv-download">
+                        <a class="button button-secondary" href="assets/cv/Pavel_Rozhkov_CV_EN.pdf" download hreflang="en" data-cv-download>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg>
+                            <span data-i18n="cv.download">Download CV (EN · PDF)</span>
+                        </a>
+                        <div class="cv-versions" role="group" aria-label="CV language versions" data-i18n-aria-label="cv.versions">
+                            <a class="text-link" href="assets/cv/Pavel_Rozhkov_CV_EN.pdf" download hreflang="en" data-i18n-aria-label="cv.english" aria-label="Download English CV (PDF)"><span data-i18n="cv.englishLabel">English PDF</span><span aria-hidden="true">&darr;</span></a>
+                            <a class="text-link" href="assets/cv/Pavel_Rozhkov_CV_RU.pdf" download hreflang="ru" data-i18n-aria-label="cv.russian" aria-label="Download Russian CV (PDF)"><span data-i18n="cv.russianLabel">Russian PDF</span><span aria-hidden="true">&darr;</span></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="cv-download">
-                <button class="button button-secondary" type="button" disabled aria-describedby="cv-note">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg>
-                    <span data-i18n="cv.download">Download CV (PDF)</span>
-                </button>
-                <p id="cv-note" data-i18n="cv.note">The PDF resume will be available here.</p>
             </div>
         </section>
 
@@ -164,17 +193,23 @@
                 <span class="section-index" aria-hidden="true">05 /</span>
                 <h2 id="contact-title" data-i18n="contact.title">Contact</h2>
             </div>
-            <p class="contact-intro" data-i18n="contact.description">For questions and engineering conversations, find me on GitHub.</p>
+            <p class="contact-intro" data-i18n="contact.description">For engineering opportunities or a conversation about numerical software and performance, get in touch.</p>
             <div class="contact-grid">
                 <a class="contact-item contact-link" href="https://github.com/lor1anz">
                     <span class="contact-label">GitHub</span>
                     <span class="contact-value">github.com/lor1anz</span>
                     <span class="contact-arrow" aria-hidden="true">&nearr;</span>
                 </a>
-                <div class="contact-item">
+                <a class="contact-item contact-link" href="mailto:rozhkov500@gmail.com">
                     <span class="contact-label" data-i18n="contact.email">Email</span>
-                    <span class="contact-pending" data-i18n="contact.emailPending">Address to be added</span>
-                </div>
+                    <span class="contact-value">rozhkov500@gmail.com</span>
+                    <span class="contact-arrow" aria-hidden="true">&nearr;</span>
+                </a>
+                <a class="contact-item contact-link" href="https://t.me/Lorianz">
+                    <span class="contact-label">Telegram</span>
+                    <span class="contact-value">@Lorianz</span>
+                    <span class="contact-arrow" aria-hidden="true">&nearr;</span>
+                </a>
             </div>
         </section>
     </main>
